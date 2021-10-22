@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using Photon.Pun;
+using Unity.VisualScripting;
+
 public class PlayerMoves : MonoBehaviour
 {
     PhotonView view;
+    [SerializeField] private CinemachineVirtualCamera cam;
     private float speed = 2.0f;
 
     public GameObject player;
@@ -12,6 +16,11 @@ public class PlayerMoves : MonoBehaviour
     void Start()
     {
         view = GetComponent<PhotonView>();
+        if (view.IsMine)
+        {
+            cam = FindObjectOfType<CinemachineVirtualCamera>();
+            cam.Follow = gameObject.transform;
+        }
     }
 
     // Update is called once per frame

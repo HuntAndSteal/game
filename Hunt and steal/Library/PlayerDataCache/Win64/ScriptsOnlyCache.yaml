@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - PlayerMoves
     - SpawnPlayers
     Cinemachine.dll:
+    - Cinemachine.Cinemachine3rdPersonFollow
+    - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
     - Cinemachine.CinemachineOrbitalTransposer
     - Cinemachine.CinemachinePipeline
@@ -20,8 +22,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -72,6 +72,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -89,13 +91,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1996}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 3052}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 6064}
+      Script: {instanceID: 3166}
+    - Class: 114
+      Script: {instanceID: 3452}
+    - Class: 114
+      Script: {instanceID: 3518}
+    - Class: 114
+      Script: {instanceID: 5278}
+    - Class: 114
+      Script: {instanceID: 6200}
+    - Class: 114
+      Script: {instanceID: 6530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -130,21 +142,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1998}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 2884}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 6238}
     - Class: 114
-      Script: {instanceID: 5940}
+      Script: {instanceID: 6406}
     - Class: 114
-      Script: {instanceID: 6260}
+      Script: {instanceID: 6726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -207,69 +219,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1996}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 2072}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 2244}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2186}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 3052}
+      Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 3878}
+      Script: {instanceID: 4344}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4516}
     - Class: 114
-      Script: {instanceID: 4186}
+      Script: {instanceID: 4652}
     - Class: 114
-      Script: {instanceID: 4448}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 4812}
+      Script: {instanceID: 5278}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5570}
     - Class: 114
-      Script: {instanceID: 5124}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5536}
+      Script: {instanceID: 6002}
     - Class: 114
-      Script: {instanceID: 5578}
+      Script: {instanceID: 6044}
     - Class: 114
-      Script: {instanceID: 5628}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 6238}
     - Class: 114
-      Script: {instanceID: 5940}
+      Script: {instanceID: 6406}
     - Class: 114
-      Script: {instanceID: 6260}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 6268}
+      Script: {instanceID: 6734}
     - Class: 114
-      Script: {instanceID: 6862}
+      Script: {instanceID: 7332}
     - Class: 114
-      Script: {instanceID: 7354}
+      Script: {instanceID: 7820}
     - Class: 114
-      Script: {instanceID: 7726}
+      Script: {instanceID: 8190}
     - Class: 114
-      Script: {instanceID: 7854}
+      Script: {instanceID: 8316}
     - Class: 114
-      Script: {instanceID: 8158}
+      Script: {instanceID: 8616}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,7 +345,7 @@ ScriptsOnlyBuild:
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
+      Hash: 2d0492f9616fb95e67adc77b51599821
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMoves
@@ -1557,12 +1569,6 @@ ScriptsOnlyBuild:
     className: PhotonHandler
   - hash:
       serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
-  - hash:
-      serializedVersion: 2
       Hash: b25c2463ba9144686d18d7707733226b
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
@@ -2280,4 +2286,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/loading scene.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Rania/game/Hunt and steal/BuildFolder/Hunt and steal.exe
+  playerPath: C:/Users/angek/game/Hunt and steal/BuildFolder/Hunt and steal.exe

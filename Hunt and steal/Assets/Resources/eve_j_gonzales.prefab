@@ -579,7 +579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3385910100430503036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.201, z: 0}
+  m_LocalPosition: {x: 0.026, y: 1.201, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7509055576549855545}
@@ -1672,6 +1672,8 @@ MonoBehaviour:
   cam: {fileID: 0}
   speed: 6
   controller: {fileID: 0}
+  turnSmoothTime: 0.1
+  turnSmoothVelocity: 0
   player: {fileID: 0}
 --- !u!114 &1033333065283363857
 MonoBehaviour:

@@ -12,7 +12,8 @@ public class PlayerMoves : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera cam;
     [SerializeField]private float speed = 6.0f;
     public CharacterController controller;
-
+    public float turnSmoothTime=0.1f;
+    public float turnSmoothVelocity;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -39,7 +40,9 @@ public class PlayerMoves : MonoBehaviour
             if (direction.magnitude >=0.1f)
             {
                 float targetAngle = Mathf.Atan2(direction.x, direction.z)*Mathf.Rad2Deg;
-                transform.rotation=Quaternion.Euler(0f,targetAngle,0f);
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity,
+                    turnSmoothTime);
+                transform.rotation=Quaternion.Euler(0f,angle,0f);
                 controller.Move(direction * speed * Time.deltaTime);
             }
         }

@@ -19,7 +19,7 @@ public class PlayerMoves : MonoBehaviour
         if (view.IsMine)
         {
             cam = FindObjectOfType<CinemachineVirtualCamera>();
-            cam.Follow = gameObject.transform;
+            cam.Follow = gameObject.transform.Find("Follow target");
         }
     }
 
